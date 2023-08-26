@@ -1,535 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
-    <link rel="stylesheet" href="CSS/estilos.css" />
-    <title>Home - BBC News</title>
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <input type="checkbox" id="check" />
-        <nav>
-          <div class="icon">B B C</div>
 
-          <div class="search_box">
-            <input type="search" placeholder="Search" />
-            <span class="fa fa-search"></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/estilos.css" />
+  <title>Home - BBC News</title>
+  <script defer src="https://kit.fontawesome.com/67c66657c7.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <input class="header__checkbox" type="checkbox" id="check" />
+      <nav class="header__nav">
+          <div class="header__icon">B B C</div>
+          <div class="header__search-box">
+              <input class="header__search-input" type="search" placeholder="Search" />
+              <span class="header__search-icon fa fa-search"></span>
           </div>
-          <ol>
-            <li>
-              <a class="container__perfil" href="#"
-                ><i class="fas fa-user-circle"></i> Sing in
-              </a>
-            </li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Sport</a></li>
-            <li><a href="#">Reel</a></li>
-            <li><a href="#">Worklife</a></li>
-            <li><a href="#">Travel</a></li>
-            <li><a href="#">Future</a></li>
-            <li>
-              <a class="more__menu" href="#"
-                >More <i class="fas fa-sort-down"></i
-              ></a>
-            </li>
+          <ol class="header__list">
+              <li class="header__list-item">
+                  <a class="header__perfil-link" href="#"><i class="fas fa-user-circle"></i> Sing in</a>
+              </li>
+              <li class="header__list-item"><a class="header__link" href="#">Home</a></li>
+              <li class="header__list-item"><a class="header__link" href="#">News</a></li>
+              <li class="header__list-item"><a class="header__link" href="#">Sport</a></li>
+              <li class="header__list-item"><a class="header__link" href="#">Reel</a></li>
+              <li class="header__list-item"><a class="header__link" href="#">Worklife</a></li>
+              <li class="header__list-item"><a class="header__link" href="#">Travel</a></li>
+              <li class="header__list-item"><a class="header__link" href="#">Future</a></li>
+              <li class="header__list-item">
+                  <a class="header__more-link" href="#">More <i class="fas fa-sort-down"></i></a>
+              </li>
           </ol>
-          <label for="check" class="bar">
-            <span class="fa fa-bars" id="bars"></span>
-            <span class="fa fa-times" id="times"></span>
+          <label class="header__label" for="check">
+              <span class="header__bars-icon fa fa-bars" id="bars"></span>
+              <span class="header__times-icon fa fa-times" id="times"></span>
           </label>
-        </nav>
-      </header>
+      </nav>
+  </header>
 
-      <header class="header__dos">
-        <div class="header__titulo">
-          <h1>NEWS</h1>
+    <header class="header__dos">
+      <div class="header__titulo">
+        <h1>NEWS</h1>
+      </div>
+      <ol class="header__dos--menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Coronavirus</a></li>
+        <li><a href="#">Climate</a></li>
+        <li><a href="#">Video</a></li>
+        <li><a href="#">World</a></li>
+        <li><a href="#">US & Canada</a></li>
+        <li><a href="#">UK</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Tech</a></li>
+        <li><a href="#">Science</a></li>
+        <li><a href="#">Stories</a></li>
+        <li>
+          <a class="more__menu more__menu--dos" href="#">More <i class="fas fa-sort-down"></i></a>
+        </li>
+      </ol>
+    </header>
+
+    <section class="container__sention">
+      <div class="container__section--contenido">
+        <div class="container__sention--titulo">
+          <h3>Texas abortion law temporarily blocked by judge</h3>
         </div>
-        <ol class="header__dos--menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Coronavirus</a></li>
-          <li><a href="#">Climate</a></li>
-          <li><a href="#">Video</a></li>
-          <li><a href="#">World</a></li>
-          <li><a href="#">US & Canada</a></li>
-          <li><a href="#">UK</a></li>
-          <li><a href="#">Business</a></li>
-          <li><a href="#">Tech</a></li>
-          <li><a href="#">Science</a></li>
-          <li><a href="#">Stories</a></li>
+
+        <div class="container__sention--parrafo">
+          <p>
+            The White House praised the ruling as an important step to
+            restoring women's constitutional rights.
+          </p>
+        </div>
+
+        <div class="container__sention--hora">
+          <li><i class="far fa-clock"></i> 6h</li>
+          <li><a href="#"> US & Canada</a></li>
+        </div>
+
+        <div class="container__sention--lista">
           <li>
-            <a class="more__menu more__menu--dos" href="#"
-              >More <i class="fas fa-sort-down"></i
-            ></a>
+            <a class="section__parrafo" href="#">What Texas women make of law</a>
           </li>
-        </ol>
-      </header>
-
-      <section class="container__sention">
-        <div class="container__section--contenido">
-          <div class="container__sention--titulo">
-            <h3>Texas abortion law temporarily blocked by judge</h3>
-          </div>
-
-          <div class="container__sention--parrafo">
-            <p>
-              The White House praised the ruling as an important step to
-              restoring women's constitutional rights.
-            </p>
-          </div>
-
-          <div class="container__sention--hora">
-            <li><i class="far fa-clock"></i> 6h</li>
-            <li><a href="#"> US & Canada</a></li>
-          </div>
-
-          <div class="container__sention--lista">
-            <li>
-              <a class="section__parrafo" href="#"
-                >What Texas women make of law</a
-              >
-            </li>
-            <li>
-              <a class="section__parrafo" href="#"
-                >Six-week abortion law comes into effect in Texas</a
-              >
-            </li>
-          </div>
+          <li>
+            <a class="section__parrafo" href="#">Six-week abortion law comes into effect in Texas</a>
+          </li>
         </div>
+      </div>
 
-        <img class="container__sention--img" src="img/img1.jpg" alt="noticia" />
+      <img class="container__sention--img" src="img/img1.jpg" alt="noticia" />
 
-      </section>
-<!-- comienza articulos -->
-      <section class="section__articulo">
-          <div class="container__section--art">
-
-            <div class="container__section--articulo">
-              <ul class="img1">
-                <img
-                  src="https://ichef.bbci.co.uk/news/380/cpsprodpb/12EAF/production/_120878477_brazil.png"
-                />
-                <figcaption><h1>False science behind hypeivermenctin hype exposed</h1><figcaption>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis enim atque.</h4> 
-                <footer>
-                    <div class="container__sention--hora">
-                        <li><i class="far fa-clock"></i> 6h</li>
-                        <li><a href="#"> US & Canada</a></li>
-                    </div>
-                </footer>
-              </ul>
-            </div>
-          
-            <div class="container__section--articulo">
-              <ul class="img1">
-                <img
-                  src="https://ichef.bbci.co.uk/news/380/cpsprodpb/17438/production/_120688259_princeandrewwithvirginiaroberts.jpg"
-                />
-                <figcaption><h1>Prince Adrew to receive Epstein-Giuffre agreement</h1><figcaption>
-                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis enim atque.ipsum dolor sit amet consectetur adipisicing elit.</h4>   
-                <footer>
-                    <div class="container__sention--hora">
-                        <li><i class="far fa-clock"></i> 6h</li>
-                        <li><a href="#"> US & Canada</a></li>
-                    </div>
-                </footer>
-              </ul>
-            </div>
-          
-            <div class="container__section--articulo">
-              <ul class="img1">
-                <img
-                  src="https://ichef.bbci.co.uk/news/380/cpsprodpb/BFCA/production/_120889094_cancer1stillnew.jpg"
-                />
-                <figcaption><h1>False science behind hypeivermenctin hype exposed</h1><figcaption>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis enim atque .</h4> 
-                <footer>
-                    <div class="container__sention--hora">
-                        <li><i class="far fa-clock"></i> 6h</li>
-                        <li><a href="#"> US & Canada</a></li>
-                    </div>
-                </footer>
-              </ul>
-            </div>
-
-            <div class="container__section--articulo">
-              <ul class="img1">
-                <img
-                  src="https://ichef.bbci.co.uk/news/380/cpsprodpb/BFCA/production/_120889094_cancer1stillnew.jpg"
-                />
-                <figcaption><h1>Ex-Nazi guard aged 100 goes on trial in Germany</h1><figcaption>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis enim atque.Lorem ipsum dolor sit amet consectetur adipisicing.</h4> 
-                <footer>
-                    <div class="container__sention--hora">
-                        <li><i class="far fa-clock"></i> 6h</li>
-                        <li><a href="#"> US & Canada</a></li>
-                    </div>
-                </footer>
-              </ul>
-            </div>
-
-            <div class="container__section--articulo">
-              <ul class="img1">
-                <img
-                  src="https://ichef.bbci.co.uk/news/380/cpsprodpb/BFCA/production/_120889094_cancer1stillnew.jpg"
-                />
-                <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis enim atque.Lorem ipsum dolor sit amet consectetur adipisicing. </h4> 
-                <footer>
-                    <div class="container__sention--hora">
-                        <li><i class="far fa-clock"></i> 6h</li>
-                        <li><a href="#"> US & Canada</a></li>
-                    </div>
-                </footer>
-              </ul>
-            </div>
-          </div>
-          
-      </section>
-
-      <!-- Seccion 2 -->
-      <section class="section__articulo">
-        <div class="container__section--art">
-        
-            <div class="container__section--articulo">
-                <ul class="img1">
-                  <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-                  <footer>
-                      <div class="container__sention--hora">
-                          <li><i class="far fa-clock"></i> 6h</li>
-                          <li><a href="#"> Canada</a></li>
-                      </div>
-                  </footer>
-                </ul>
-            </div>
-            <div class="container__section--articulo">
-                <ul class="img1">
-                  <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-                  
-                  <footer>
-                      <div class="container__sention--hora">
-                          <li><i class="far fa-clock"></i> 6h</li>
-                          <li><a href="#">Canada</a></li>
-                      </div>
-                  </footer>
-                </ul>
-            </div>
-            <div class="container__section--articulo">
-                <ul class="img1">
-                  <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-                   
-                  <footer>
-                      <div class="container__sention--hora">
-                          <li><i class="far fa-clock"></i> 6h</li>
-                          <li><a href="#">Canada</a></li>
-                      </div>
-                  </footer>
-                </ul>
-            </div>
-            <div class="container__section--articulo">
-                <ul class="img1">
-                  <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-                  
-                  <footer>
-                      <div class="container__sention--hora">
-                          <li><i class="far fa-clock"></i> 6h</li>
-                          <li><a href="#">Canada</a></li>
-                      </div>
-                  </footer>
-                </ul>
-            </div>
-            <div class="container__section--articulo">
-                <ul class="img1">
-                  <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-                  
-                  <footer>
-                      <div class="container__sention--hora">
-                          <li><i class="far fa-clock"></i> 6h</li>
-                          <li><a href="#">Canada</a></li>
-                      </div>
-                  </footer>
-                </ul>
-            </div>
-            <div class="container__section--articulo">
-                <ul class="img1">
-                  <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-                  
-                  <footer>
-                      <div class="container__sention--hora">
-                          <li><i class="far fa-clock"></i> 6h</li>
-                          <li><a href="#">Canada</a></li>
-                      </div>
-                  </footer>
-                </ul>
-            </div>
-            <div class="container__section--articulo">
-                <ul class="img1">
-                  <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-                  
-                  <footer>
-                      <div class="container__sention--hora">
-                          <li><i class="far fa-clock"></i>  6h</li>
-                          <li><a href="#">Canada</a></li>
-                      </div>
-                  </footer>
-                </ul>
-            </div>
-            <div class="container__section--articulo">
-                <ul class="img1">
-                  <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-                  
-                  <footer>
-                      <div class="container__sention--hora">
-                          <li><i class="far fa-clock"></i> 6h</li>
-                          <li><a href="#">Canada</a></li>
-                      </div>
-                  </footer>
-                </ul>
-            </div>
-        
-        </div>
-      </section>
-
-      <!-- Seccion 3  para imagenes-->
-      <section class="section__articulo">
-
-         <div class="container__section--art container__section--art3">
-            <h1 class="section__articulo--titulo">Must See</h1>
-         </div>    
-
-         <div class="container__section--articulo">
-            <ul class="img__grande">
-              <img
-                class="img__grande--img"
-                src="https://ichef.bbci.co.uk/news/820/cpsprodpb/1014C/production/_120986856_p09y1n10.jpg"
-              />
-              <figcaption><h1>Terror suspect should go free says spy who got him</h1><figcaption>
-            </ul>
-          </div>
-          
-          <div class="container__section--articulo--3">
-            <ul class="img1">
-              <img
-                class="img--3"
-                src="https://ichef.bbci.co.uk/news/380/cpsprodpb/54F0/production/_106544712_cf3073a5-3e90-46e8-a8f7-ea0610fd4ca0.jpg"
-              />
-              <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-            </ul>
-
-            <ul class="img1">
-              <img
-                class="img--3"
-                src="https://ichef.bbci.co.uk/news/380/cpsprodpb/D354/production/_121000145_p09y4bz3.jpg"
-              />
-              <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-            </ul>
-
-          </div>
-
-          <!-- imagenes lateral -->
-          <div class="container__section--articulo--3 container__section--articulo--lateral">
-            <ul class="img1">
-              <img
-                class="img--3"
-                src="https://ichef.bbci.co.uk/news/380/cpsprodpb/E830/production/_121004495_gettyimages-1235652542.jpg"
-              />
-              <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-            </ul>
-
-            <ul class="img1">
-              <img
-                class="img--3"
-                src="https://ichef.bbci.co.uk/news/380/cpsprodpb/BC96/production/_120887284_chip-1.jpg"
-              />
-              <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-            </ul>
-
-          </div>
-
-          <!-- barra imagenes inferior -->
-          <div class="container__section--articulo--3 container__section--articulo--bajo">
-            <ul class="img1">
-              <img
-                class="img--4"
-                src="https://ichef.bbci.co.uk/news/240/cpsprodpb/10AD5/production/_120990386_p09y2m1t.jpg"
-              />
-              <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-            </ul>
-
-            <ul class="img1">
-              <img
-                class="img--4"
-                src="https://ichef.bbci.co.uk/news/240/cpsprodpb/C923/production/_120819415_mediaitem120819414.jpg"
-              />
-              <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-            </ul>
-
-            <ul class="img1">
-              <img
-                class="img--4"
-                src="https://ichef.bbci.co.uk/news/240/cpsprodpb/EFC4/production/_120908316_microsoftteams-image-15.png"
-              />
-              <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-            </ul>
-
-            <ul class="img1">
-              <img
-                class="img--4"
-                src="https://ichef.bbci.co.uk/news/240/cpsprodpb/1D9C/production/_121008570_hi071167996-1.jpg"
-              />
-              <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-            </ul>
-
-          </div>
-
-      </section>
-
-      <!-- Seccion lista numeros -->
-      <section class="section__articulo">
-
-        <div class="container__section--art container__section--art3 container__section--art4">
-           <h1 class="section__articulo--titulo">Most watched</h1>
-        </div> 
-
-        <div class="container__section--articulo container__section--lista">
-
-          <ul class="lista__numeros">
-
-            <li class="lista__numeros--1">
-              <h1 class="numero">1</h1>
-              <a class="parrafo__numero"href="#">&#10148 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-            </li>
-
-            <li class="lista__numeros--1">
-              <h1 class="numero">2</h1>
-              <a class="parrafo__numero"href="#">&#10148 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-            </li>
-
-            <li class="lista__numeros--1">
-              <h1 class="numero">3</h1>
-              <a class="parrafo__numero"href="#">&#10148 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-            </li>
-
-            <li class="lista__numeros--1">
-              <h1 class="numero">4</h1>
-              <a class="parrafo__numero"href="#">&#10148 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-            </li>
-
-            <li class="lista__numeros--1">
-              <h1 class="numero">5</h1>
-              <a class="parrafo__numero"href="#">&#10148 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-            </li>
-            
-          </ul>
-
-        </div>
-
-      </section>
-      <!-- Seccion Full Story -->
-      <section class="section__articulo section__articulo--Story">
-
-        <div class="container__section--art container__section--art3">
-           <h1 class="section__articulo--titulo">Full Story</h1>
-        </div>    
+    </section>
+    <!-- comienza articulos -->
+    <section class="section__articulo">
+      <div class="container__section--art">
 
         <div class="container__section--articulo">
-           <ul class="img__grande">
-             <img
-               class="img__grande--img"
-               src="https://ichef.bbci.co.uk/news/820/cpsprodpb/1014C/production/_120986856_p09y1n10.jpg"
-             />
-             <figcaption><h1>Terror suspect should go free says spy who got him</h1><figcaption>
-           </ul>
-         </div>
-         
-         <div class="container__section--articulo--3">
-           <ul class="img1">
-             <img
-               class="img--3"
-               src="https://ichef.bbci.co.uk/news/380/cpsprodpb/54F0/production/_106544712_cf3073a5-3e90-46e8-a8f7-ea0610fd4ca0.jpg"
-             />
-             <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-           </ul>
+          <ul class="img1">
+            <img src="https://ichef.bbci.co.uk/news/380/cpsprodpb/12EAF/production/_120878477_brazil.png" />
+            <figcaption>
+              <h1>False science behind hypeivermenctin hype exposed</h1>
+              <figcaption>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis enim atque.</h4>
+                <footer>
+                  <div class="container__sention--hora">
+                    <li><i class="far fa-clock"></i> 6h</li>
+                    <li><a href="#"> US & Canada</a></li>
+                  </div>
+                </footer>
+          </ul>
+        </div>
 
-           <ul class="img1">
-             <img
-               class="img--3"
-               src="https://ichef.bbci.co.uk/news/380/cpsprodpb/D354/production/_121000145_p09y4bz3.jpg"
-             />
-             <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-           </ul>
+        <div class="container__section--articulo">
+          <ul class="img1">
+            <img
+              src="https://ichef.bbci.co.uk/news/380/cpsprodpb/17438/production/_120688259_princeandrewwithvirginiaroberts.jpg" />
+            <figcaption>
+              <h1>Prince Adrew to receive Epstein-Giuffre agreement</h1>
+              <figcaption>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis enim atque.ipsum dolor sit amet
+                  consectetur adipisicing elit.</h4>
+                <footer>
+                  <div class="container__sention--hora">
+                    <li><i class="far fa-clock"></i> 6h</li>
+                    <li><a href="#"> US & Canada</a></li>
+                  </div>
+                </footer>
+          </ul>
+        </div>
 
-         </div>
+        <div class="container__section--articulo">
+          <ul class="img1">
+            <img src="https://ichef.bbci.co.uk/news/380/cpsprodpb/BFCA/production/_120889094_cancer1stillnew.jpg" />
+            <figcaption>
+              <h1>False science behind hypeivermenctin hype exposed</h1>
+              <figcaption>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis enim atque .</h4>
+                <footer>
+                  <div class="container__sention--hora">
+                    <li><i class="far fa-clock"></i> 6h</li>
+                    <li><a href="#"> US & Canada</a></li>
+                  </div>
+                </footer>
+          </ul>
+        </div>
 
-         <!-- imagenes lateral -->
-         <div class="container__section--articulo--3 container__section--articulo--lateral">
-           <ul class="img1">
-             <img
-               class="img--3"
-               src="https://ichef.bbci.co.uk/news/380/cpsprodpb/E830/production/_121004495_gettyimages-1235652542.jpg"
-             />
-             <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-           </ul>
+        <div class="container__section--articulo">
+          <ul class="img1">
+            <img src="https://ichef.bbci.co.uk/news/380/cpsprodpb/BFCA/production/_120889094_cancer1stillnew.jpg" />
+            <figcaption>
+              <h1>Ex-Nazi guard aged 100 goes on trial in Germany</h1>
+              <figcaption>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis enim atque.Lorem ipsum dolor sit
+                  amet consectetur adipisicing.</h4>
+                <footer>
+                  <div class="container__sention--hora">
+                    <li><i class="far fa-clock"></i> 6h</li>
+                    <li><a href="#"> US & Canada</a></li>
+                  </div>
+                </footer>
+          </ul>
+        </div>
 
-           <ul class="img1">
-             <img
-               class="img--3"
-               src="https://ichef.bbci.co.uk/news/380/cpsprodpb/BC96/production/_120887284_chip-1.jpg"
-             />
-             <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-           </ul>
+        <div class="container__section--articulo">
+          <ul class="img1">
+            <img src="https://ichef.bbci.co.uk/news/380/cpsprodpb/BFCA/production/_120889094_cancer1stillnew.jpg" />
+            <figcaption>
+              <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+              <figcaption>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis enim atque.Lorem ipsum dolor sit
+                  amet consectetur adipisicing. </h4>
+                <footer>
+                  <div class="container__sention--hora">
+                    <li><i class="far fa-clock"></i> 6h</li>
+                    <li><a href="#"> US & Canada</a></li>
+                  </div>
+                </footer>
+          </ul>
+        </div>
+      </div>
 
-         </div>
+    </section>
 
-         <!-- barra imagenes inferior -->
-         <div class="container__section--articulo--3 container__section--articulo--bajo">
-           <ul class="img1">
-             <img
-               class="img--4"
-               src="https://ichef.bbci.co.uk/news/240/cpsprodpb/10AD5/production/_120990386_p09y2m1t.jpg"
-             />
-             <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-           </ul>
+    <!-- Seccion 2 -->
+    <section class="section__articulo">
+      <div class="container__section--art">
 
-           <ul class="img1">
-             <img
-               class="img--4"
-               src="https://ichef.bbci.co.uk/news/240/cpsprodpb/C923/production/_120819415_mediaitem120819414.jpg"
-             />
-             <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-           </ul>
+        <div class="container__section--articulo">
+          <ul class="img1">
+            <figcaption>
+              <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+              <figcaption>
+                <footer>
+                  <div class="container__sention--hora">
+                    <li><i class="far fa-clock"></i> 6h</li>
+                    <li><a href="#"> Canada</a></li>
+                  </div>
+                </footer>
+          </ul>
+        </div>
+        <div class="container__section--articulo">
+          <ul class="img1">
+            <figcaption>
+              <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+              <figcaption>
 
-           <ul class="img1">
-             <img
-               class="img--4"
-               src="https://ichef.bbci.co.uk/news/240/cpsprodpb/EFC4/production/_120908316_microsoftteams-image-15.png"
-             />
-             <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-           </ul>
+                <footer>
+                  <div class="container__sention--hora">
+                    <li><i class="far fa-clock"></i> 6h</li>
+                    <li><a href="#">Canada</a></li>
+                  </div>
+                </footer>
+          </ul>
+        </div>
+        <div class="container__section--articulo">
+          <ul class="img1">
+            <figcaption>
+              <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+              <figcaption>
 
-           <ul class="img1">
-             <img
-               class="img--4"
-               src="https://ichef.bbci.co.uk/news/240/cpsprodpb/1D9C/production/_121008570_hi071167996-1.jpg"
-             />
-             <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-           </ul>
+                <footer>
+                  <div class="container__sention--hora">
+                    <li><i class="far fa-clock"></i> 6h</li>
+                    <li><a href="#">Canada</a></li>
+                  </div>
+                </footer>
+          </ul>
+        </div>
+        <div class="container__section--articulo">
+          <ul class="img1">
+            <figcaption>
+              <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+              <figcaption>
 
-         </div>
+                <footer>
+                  <div class="container__sention--hora">
+                    <li><i class="far fa-clock"></i> 6h</li>
+                    <li><a href="#">Canada</a></li>
+                  </div>
+                </footer>
+          </ul>
+        </div>
+        <div class="container__section--articulo">
+          <ul class="img1">
+            <figcaption>
+              <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+              <figcaption>
 
-     </section>
+                <footer>
+                  <div class="container__sention--hora">
+                    <li><i class="far fa-clock"></i> 6h</li>
+                    <li><a href="#">Canada</a></li>
+                  </div>
+                </footer>
+          </ul>
+        </div>
+        <div class="container__section--articulo">
+          <ul class="img1">
+            <figcaption>
+              <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+              <figcaption>
 
-     <!-- Seccion Most read numeros columna uno-->
+                <footer>
+                  <div class="container__sention--hora">
+                    <li><i class="far fa-clock"></i> 6h</li>
+                    <li><a href="#">Canada</a></li>
+                  </div>
+                </footer>
+          </ul>
+        </div>
+        <div class="container__section--articulo">
+          <ul class="img1">
+            <figcaption>
+              <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+              <figcaption>
 
-     <section class="section__articulo section__articulo--read">
+                <footer>
+                  <div class="container__sention--hora">
+                    <li><i class="far fa-clock"></i> 6h</li>
+                    <li><a href="#">Canada</a></li>
+                  </div>
+                </footer>
+          </ul>
+        </div>
+        <div class="container__section--articulo">
+          <ul class="img1">
+            <figcaption>
+              <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+              <figcaption>
+
+                <footer>
+                  <div class="container__sention--hora">
+                    <li><i class="far fa-clock"></i> 6h</li>
+                    <li><a href="#">Canada</a></li>
+                  </div>
+                </footer>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Seccion 3  para imagenes-->
+    <section class="section__articulo">
+
+      <div class="container__section--art container__section--art3">
+        <h1 class="section__articulo--titulo">Must See</h1>
+      </div>
+
+      <div class="container__section--articulo">
+        <ul class="img__grande">
+          <img class="img__grande--img"
+            src="https://ichef.bbci.co.uk/news/820/cpsprodpb/1014C/production/_120986856_p09y1n10.jpg" />
+          <figcaption>
+            <h1>Terror suspect should go free says spy who got him</h1>
+            <figcaption>
+        </ul>
+      </div>
+
+      <div class="container__section--articulo--3">
+        <ul class="img1">
+          <img class="img--3"
+            src="https://ichef.bbci.co.uk/news/380/cpsprodpb/54F0/production/_106544712_cf3073a5-3e90-46e8-a8f7-ea0610fd4ca0.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+        <ul class="img1">
+          <img class="img--3"
+            src="https://ichef.bbci.co.uk/news/380/cpsprodpb/D354/production/_121000145_p09y4bz3.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+      </div>
+
+      <!-- imagenes lateral -->
+      <div class="container__section--articulo--3 container__section--articulo--lateral">
+        <ul class="img1">
+          <img class="img--3"
+            src="https://ichef.bbci.co.uk/news/380/cpsprodpb/E830/production/_121004495_gettyimages-1235652542.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+        <ul class="img1">
+          <img class="img--3" src="https://ichef.bbci.co.uk/news/380/cpsprodpb/BC96/production/_120887284_chip-1.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+      </div>
+
+      <!-- barra imagenes inferior -->
+      <div class="container__section--articulo--3 container__section--articulo--bajo">
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/10AD5/production/_120990386_p09y2m1t.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/C923/production/_120819415_mediaitem120819414.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/EFC4/production/_120908316_microsoftteams-image-15.png" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/1D9C/production/_121008570_hi071167996-1.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+      </div>
+
+    </section>
+
+    <!-- Seccion lista numeros -->
+    <section class="section__articulo">
 
       <div class="container__section--art container__section--art3 container__section--art4">
-         <h1 class="section__articulo--titulo">Most read</h1>
-      </div> 
+        <h1 class="section__articulo--titulo">Most watched</h1>
+      </div>
+
+      <div class="container__section--articulo container__section--lista">
+
+        <ul class="lista__numeros">
+
+          <li class="lista__numeros--1">
+            <h1 class="numero">1</h1>
+            <a class="parrafo__numero" href="#">&#10148 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+          </li>
+
+          <li class="lista__numeros--1">
+            <h1 class="numero">2</h1>
+            <a class="parrafo__numero" href="#">&#10148 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+          </li>
+
+          <li class="lista__numeros--1">
+            <h1 class="numero">3</h1>
+            <a class="parrafo__numero" href="#">&#10148 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+          </li>
+
+          <li class="lista__numeros--1">
+            <h1 class="numero">4</h1>
+            <a class="parrafo__numero" href="#">&#10148 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+          </li>
+
+          <li class="lista__numeros--1">
+            <h1 class="numero">5</h1>
+            <a class="parrafo__numero" href="#">&#10148 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+    <!-- Seccion Full Story -->
+    <section class="section__articulo section__articulo--Story">
+
+      <div class="container__section--art container__section--art3">
+        <h1 class="section__articulo--titulo">Full Story</h1>
+      </div>
+
+      <div class="container__section--articulo">
+        <ul class="img__grande">
+          <img class="img__grande--img"
+            src="https://ichef.bbci.co.uk/news/820/cpsprodpb/1014C/production/_120986856_p09y1n10.jpg" />
+          <figcaption>
+            <h1>Terror suspect should go free says spy who got him</h1>
+            <figcaption>
+        </ul>
+      </div>
+
+      <div class="container__section--articulo--3">
+        <ul class="img1">
+          <img class="img--3"
+            src="https://ichef.bbci.co.uk/news/380/cpsprodpb/54F0/production/_106544712_cf3073a5-3e90-46e8-a8f7-ea0610fd4ca0.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+        <ul class="img1">
+          <img class="img--3"
+            src="https://ichef.bbci.co.uk/news/380/cpsprodpb/D354/production/_121000145_p09y4bz3.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+      </div>
+
+      <!-- imagenes lateral -->
+      <div class="container__section--articulo--3 container__section--articulo--lateral">
+        <ul class="img1">
+          <img class="img--3"
+            src="https://ichef.bbci.co.uk/news/380/cpsprodpb/E830/production/_121004495_gettyimages-1235652542.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+        <ul class="img1">
+          <img class="img--3" src="https://ichef.bbci.co.uk/news/380/cpsprodpb/BC96/production/_120887284_chip-1.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+      </div>
+
+      <!-- barra imagenes inferior -->
+      <div class="container__section--articulo--3 container__section--articulo--bajo">
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/10AD5/production/_120990386_p09y2m1t.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/C923/production/_120819415_mediaitem120819414.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/EFC4/production/_120908316_microsoftteams-image-15.png" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/1D9C/production/_121008570_hi071167996-1.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+      </div>
+
+    </section>
+
+    <!-- Seccion Most read numeros columna uno-->
+
+    <section class="section__articulo section__articulo--read">
+
+      <div class="container__section--art container__section--art3 container__section--art4">
+        <h1 class="section__articulo--titulo">Most read</h1>
+      </div>
 
       <div class="container__section--articulo container__section--lista container__section--columna">
 
@@ -537,29 +546,29 @@
 
           <li class="lista__numeros--1">
             <h1 class="numero">1</h1>
-            <a class="parrafo__numero"href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+            <a class="parrafo__numero" href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
           </li>
 
           <li class="lista__numeros--1">
             <h1 class="numero">3</h1>
-            <a class="parrafo__numero"href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+            <a class="parrafo__numero" href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
           </li>
 
           <li class="lista__numeros--1">
             <h1 class="numero">5</h1>
-            <a class="parrafo__numero"href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+            <a class="parrafo__numero" href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
           </li>
 
           <li class="lista__numeros--1">
             <h1 class="numero">7</h1>
-            <a class="parrafo__numero"href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+            <a class="parrafo__numero" href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
           </li>
 
           <li class="lista__numeros--1">
             <h1 class="numero">9</h1>
-            <a class="parrafo__numero"href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+            <a class="parrafo__numero" href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
           </li>
-          
+
         </ul>
 
       </div>
@@ -569,35 +578,36 @@
     <!-- Seccion Most read numeros columna dos-->
     <section class="section__articulo section__articulo--read">
 
-      <div class="container__section--articulo container__section--lista container__section--columna container__section--columna2">
+      <div
+        class="container__section--articulo container__section--lista container__section--columna container__section--columna2">
 
         <ul class="lista__numeros">
 
           <li class="lista__numeros--1">
             <h1 class="numero">2</h1>
-            <a class="parrafo__numero"href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+            <a class="parrafo__numero" href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
           </li>
 
           <li class="lista__numeros--1">
             <h1 class="numero">4</h1>
-            <a class="parrafo__numero"href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+            <a class="parrafo__numero" href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
           </li>
 
           <li class="lista__numeros--1">
             <h1 class="numero">6</h1>
-            <a class="parrafo__numero"href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+            <a class="parrafo__numero" href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
           </li>
 
           <li class="lista__numeros--1">
             <h1 class="numero">8</h1>
-            <a class="parrafo__numero"href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+            <a class="parrafo__numero" href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
           </li>
 
           <li class="lista__numeros--1">
             <h1 class="numero">10</h1>
-            <a class="parrafo__numero"href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+            <a class="parrafo__numero" href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
           </li>
-          
+
         </ul>
 
       </div>
@@ -608,278 +618,276 @@
     <section class="section__articulo section__articulo--Story section__articulo--around">
 
       <div class="container__section--art container__section--art3">
-         <h1 class="section__articulo--titulo">Around the BBC</h1>
-      </div>    
+        <h1 class="section__articulo--titulo">Around the BBC</h1>
+      </div>
 
       <div class="container__section--articulo">
-         <ul class="img__grande">
-           <img
-             class="img__grande--img"
-             src="https://ichef.bbci.co.uk/news/820/cpsprodpb/1014C/production/_120986856_p09y1n10.jpg"
-           />
-           <figcaption><h1>Terror suspect should go free says spy who got him</h1><figcaption>
-         </ul>
-       </div>
-       
-       <div class="container__section--articulo--3">
-         <ul class="img1">
-           <img
-             class="img--3"
-             src="https://ichef.bbci.co.uk/news/380/cpsprodpb/54F0/production/_106544712_cf3073a5-3e90-46e8-a8f7-ea0610fd4ca0.jpg"
-           />
-           <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-         </ul>
+        <ul class="img__grande">
+          <img class="img__grande--img"
+            src="https://ichef.bbci.co.uk/news/820/cpsprodpb/1014C/production/_120986856_p09y1n10.jpg" />
+          <figcaption>
+            <h1>Terror suspect should go free says spy who got him</h1>
+            <figcaption>
+        </ul>
+      </div>
 
-         <ul class="img1">
-           <img
-             class="img--3"
-             src="https://ichef.bbci.co.uk/news/380/cpsprodpb/D354/production/_121000145_p09y4bz3.jpg"
-           />
-           <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-         </ul>
+      <div class="container__section--articulo--3">
+        <ul class="img1">
+          <img class="img--3"
+            src="https://ichef.bbci.co.uk/news/380/cpsprodpb/54F0/production/_106544712_cf3073a5-3e90-46e8-a8f7-ea0610fd4ca0.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
 
-       </div>
+        <ul class="img1">
+          <img class="img--3"
+            src="https://ichef.bbci.co.uk/news/380/cpsprodpb/D354/production/_121000145_p09y4bz3.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
 
-       <!-- imagenes lateral -->
-       <div class="container__section--articulo--3 container__section--articulo--lateral">
-         <ul class="img1">
-           <img
-             class="img--3"
-             src="https://ichef.bbci.co.uk/news/380/cpsprodpb/E830/production/_121004495_gettyimages-1235652542.jpg"
-           />
-           <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-         </ul>
+      </div>
 
-         <ul class="img1">
-           <img
-             class="img--3"
-             src="https://ichef.bbci.co.uk/news/380/cpsprodpb/BC96/production/_120887284_chip-1.jpg"
-           />
-           <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-         </ul>
+      <!-- imagenes lateral -->
+      <div class="container__section--articulo--3 container__section--articulo--lateral">
+        <ul class="img1">
+          <img class="img--3"
+            src="https://ichef.bbci.co.uk/news/380/cpsprodpb/E830/production/_121004495_gettyimages-1235652542.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
 
-       </div>
+        <ul class="img1">
+          <img class="img--3" src="https://ichef.bbci.co.uk/news/380/cpsprodpb/BC96/production/_120887284_chip-1.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
 
-       <!-- barra imagenes inferior -->
-       <div class="container__section--articulo--3 container__section--articulo--bajo">
-         <ul class="img1">
-           <img
-             class="img--4"
-             src="https://ichef.bbci.co.uk/news/240/cpsprodpb/10AD5/production/_120990386_p09y2m1t.jpg"
-           />
-           <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-         </ul>
+      </div>
 
-         <ul class="img1">
-           <img
-             class="img--4"
-             src="https://ichef.bbci.co.uk/news/240/cpsprodpb/C923/production/_120819415_mediaitem120819414.jpg"
-           />
-           <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-         </ul>
+      <!-- barra imagenes inferior -->
+      <div class="container__section--articulo--3 container__section--articulo--bajo">
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/10AD5/production/_120990386_p09y2m1t.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
 
-         <ul class="img1">
-           <img
-             class="img--4"
-             src="https://ichef.bbci.co.uk/news/240/cpsprodpb/EFC4/production/_120908316_microsoftteams-image-15.png"
-           />
-           <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-         </ul>
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/C923/production/_120819415_mediaitem120819414.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
 
-         <ul class="img1">
-           <img
-             class="img--4"
-             src="https://ichef.bbci.co.uk/news/240/cpsprodpb/1D9C/production/_121008570_hi071167996-1.jpg"
-           />
-           <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-         </ul>
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/EFC4/production/_120908316_microsoftteams-image-15.png" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
 
-       </div>
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/1D9C/production/_121008570_hi071167996-1.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
 
-   </section>
+      </div>
+
+    </section>
 
     <!-- nueva seccion Sport -->
 
     <section class="section__articulo section__articulo--Story section__articulo--around section__articulo--sport">
 
       <div class="container__section--art container__section--art3">
-         <h1 class="section__articulo--titulo">Sport</h1>
-      </div>    
+        <h1 class="section__articulo--titulo">Sport</h1>
+      </div>
 
       <div class="container__section--articulo">
-         <ul class="img__grande">
-           <img
-             class="img__grande--img"
-             src="https://ichef.bbci.co.uk/news/820/cpsprodpb/1014C/production/_120986856_p09y1n10.jpg"
-           />
-           <figcaption><h1>Terror suspect should go free says spy who got him</h1><figcaption>
-         </ul>
-       </div>
-       
-       <div class="container__section--articulo--3">
-         <ul class="img1">
-           <img
-             class="img--3"
-             src="https://ichef.bbci.co.uk/news/380/cpsprodpb/54F0/production/_106544712_cf3073a5-3e90-46e8-a8f7-ea0610fd4ca0.jpg"
-           />
-           <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-         </ul>
+        <ul class="img__grande">
+          <img class="img__grande--img"
+            src="https://ichef.bbci.co.uk/news/820/cpsprodpb/1014C/production/_120986856_p09y1n10.jpg" />
+          <figcaption>
+            <h1>Terror suspect should go free says spy who got him</h1>
+            <figcaption>
+        </ul>
+      </div>
 
-         <ul class="img1">
-           <img
-             class="img--3"
-             src="https://ichef.bbci.co.uk/news/380/cpsprodpb/D354/production/_121000145_p09y4bz3.jpg"
-           />
-           <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-         </ul>
-
-       </div>
-
-       <!-- imagenes lateral -->
-       <div class="container__section--articulo--3 container__section--articulo--lateral">
-         <ul class="img1">
-           <img
-             class="img--3"
-             src="https://ichef.bbci.co.uk/news/380/cpsprodpb/E830/production/_121004495_gettyimages-1235652542.jpg"
-           />
-           <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-         </ul>
-
-         <ul class="img1">
-           <img
-             class="img--3"
-             src="https://ichef.bbci.co.uk/news/380/cpsprodpb/BC96/production/_120887284_chip-1.jpg"
-           />
-           <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-         </ul>
-
-       </div>
-
-       <!-- barra imagenes inferior -->
-       <div class="container__section--articulo--3 container__section--articulo--bajo">
-         <ul class="img1">
-           <img
-             class="img--4"
-             src="https://ichef.bbci.co.uk/news/240/cpsprodpb/10AD5/production/_120990386_p09y2m1t.jpg"
-           />
-           <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-         </ul>
-
-         <ul class="img1">
-           <img
-             class="img--4"
-             src="https://ichef.bbci.co.uk/news/240/cpsprodpb/C923/production/_120819415_mediaitem120819414.jpg"
-           />
-           <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-         </ul>
-
-         <ul class="img1">
-           <img
-             class="img--4"
-             src="https://ichef.bbci.co.uk/news/240/cpsprodpb/EFC4/production/_120908316_microsoftteams-image-15.png"
-           />
-           <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-         </ul>
-
-         <ul class="img1">
-           <img
-             class="img--4"
-             src="https://ichef.bbci.co.uk/news/240/cpsprodpb/1D9C/production/_121008570_hi071167996-1.jpg"
-           />
-           <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-         </ul>
-
-       </div>
-
-       <div class="container__section--articulo--3 container__section--articulo--bajo">
+      <div class="container__section--articulo--3">
         <ul class="img1">
-          <img
-            class="img--4"
-            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/10AD5/production/_120990386_p09y2m1t.jpg"
-          />
-          <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
+          <img class="img--3"
+            src="https://ichef.bbci.co.uk/news/380/cpsprodpb/54F0/production/_106544712_cf3073a5-3e90-46e8-a8f7-ea0610fd4ca0.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
         </ul>
 
         <ul class="img1">
-          <img
-            class="img--4"
-            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/C923/production/_120819415_mediaitem120819414.jpg"
-          />
-          <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-        </ul>
-
-        <ul class="img1">
-          <img
-            class="img--4"
-            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/EFC4/production/_120908316_microsoftteams-image-15.png"
-          />
-          <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
-        </ul>
-
-        <ul class="img1">
-          <img
-            class="img--4"
-            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/1D9C/production/_121008570_hi071167996-1.jpg"
-          />
-          <figcaption><h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1><figcaption>
+          <img class="img--3"
+            src="https://ichef.bbci.co.uk/news/380/cpsprodpb/D354/production/_121000145_p09y4bz3.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
         </ul>
 
       </div>
 
-   </section>
-   <!-- Seccion de iconos de redes sociales -->
-   <!--  <section class="container__icons">
+      <!-- imagenes lateral -->
+      <div class="container__section--articulo--3 container__section--articulo--lateral">
+        <ul class="img1">
+          <img class="img--3"
+            src="https://ichef.bbci.co.uk/news/380/cpsprodpb/E830/production/_121004495_gettyimages-1235652542.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
 
-      <section class="section__articulo section__articulo--Story section__articulo--around section__articulo--sport">
+        <ul class="img1">
+          <img class="img--3" src="https://ichef.bbci.co.uk/news/380/cpsprodpb/BC96/production/_120887284_chip-1.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
 
-        <div class="container__section--art container__section--art3">
-           <h1 class="section__articulo--titulo">Find us here</h1>
-        </div>  
+      </div>
 
-        <div class="container__section--icon">
-          <ul>
-            <div class="icon__twitter">
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-            <div class="icon__facebook">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-            </div>
-            <div class="icon__instagram">
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-          </ul>
+      <!-- barra imagenes inferior -->
+      <div class="container__section--articulo--3 container__section--articulo--bajo">
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/10AD5/production/_120990386_p09y2m1t.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
 
-          <div class="container__section--app">
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/C923/production/_120819415_mediaitem120819414.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
 
-            <ul class="apps">
-              <div class="news__daily">
-                <a href="#"><i class="fas fa-envelope-open-text"></i>NEWS DAILY</a>
-                <p>Get news from the BBC in your inbox each weekday morning</p>
-              </div>
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/EFC4/production/_120908316_microsoftteams-image-15.png" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
 
-              <div class="news__app">
-                <a href="#"><i class="fas fa-mobile-alt"></i>NEWS APP</a>
-                <p>Find out more about our BBC News App</p>
-              </div>
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/1D9C/production/_121008570_hi071167996-1.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
 
-              <div class="news__email">
-                <a href="#">Email us at haveyoursay@bbc.co.uk
+      </div>
 
-                  Send an SMS or MMS to +44 7624 800100
-                  
-                  Follow Have Your Say on Twitter
-                  
-                  Why you can trust BBC News</a>
-              </div>
-            </ul>
+      <div class="container__section--articulo--3 container__section--articulo--bajo">
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/10AD5/production/_120990386_p09y2m1t.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
 
-          </div>
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/C923/production/_120819415_mediaitem120819414.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
 
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/EFC4/production/_120908316_microsoftteams-image-15.png" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+        <ul class="img1">
+          <img class="img--4"
+            src="https://ichef.bbci.co.uk/news/240/cpsprodpb/1D9C/production/_121008570_hi071167996-1.jpg" />
+          <figcaption>
+            <h1>Abdulrazak gurnah wins Nobel Prize for Literature</h1>
+            <figcaption>
+        </ul>
+
+      </div>
+
+    </section>
+    <!-- Seccion de iconos de redes sociales -->
+    <!--  <section class="container__icons">
+
+<section class="section__articulo section__articulo--Story section__articulo--around section__articulo--sport">
+
+  <div class="container__section--art container__section--art3">
+      <h1 class="section__articulo--titulo">Find us here</h1>
+  </div>  
+
+  <div class="container__section--icon">
+    <ul>
+      <div class="icon__twitter">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="icon__facebook">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <div class="icon__instagram">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </ul>
+
+    <div class="container__section--app">
+
+      <ul class="apps">
+        <div class="news__daily">
+          <a href="#"><i class="fas fa-envelope-open-text"></i>NEWS DAILY</a>
+          <p>Get news from the BBC in your inbox each weekday morning</p>
         </div>
 
-      </section>
+        <div class="news__app">
+          <a href="#"><i class="fas fa-mobile-alt"></i>NEWS APP</a>
+          <p>Find out more about our BBC News App</p>
+        </div>
 
-    </section> -->
+        <div class="news__email">
+          <a href="#">Email us at haveyoursay@bbc.co.uk
+
+            Send an SMS or MMS to +44 7624 800100
+            
+            Follow Have Your Say on Twitter
+            
+            Why you can trust BBC News</a>
+        </div>
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+</section> -->
 
     <!-- footer principal -->
     <footer class="footer">
@@ -894,35 +902,35 @@
             <h4>Future</h4>
           </div>
         </div>
-        
+
         <div class="footer__menu">
           <div class="footer--list1">
             <h4>News</h4>
             <h4>Culture</h4>
           </div>
         </div>
-        
+
         <div class="footer__menu">
           <div class="footer--list1">
             <h4>Sport</h4>
             <h4>Music</h4>
           </div>
         </div>
-        
+
         <div class="footer__menu">
           <div class="footer--list1">
             <h4>Real</h4>
             <h4>TV</h4>
           </div>
         </div>
-        
+
         <div class="footer__menu">
           <div class="footer--list1">
             <h4>Worklife</h4>
             <h4>Weather</h4>
           </div>
         </div>
-        
+
         <div class="footer__menu">
           <div class="footer--list1">
             <h4>Travel</h4>
@@ -948,12 +956,11 @@
       </div>
 
       <div class="foooter__Copy">
-        <p>Copyright © 2021 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+        <p>Copyright © 2021 BBC. The BBC is not responsible for the content of external sites. Read about our approach
+          to external linking.</p>
       </div>
-
-
     </footer>
+  </div>
+</body>
 
-    </div>
-  </body>
 </html>
