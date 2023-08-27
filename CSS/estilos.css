@@ -1,9 +1,17 @@
 * {
-  box-sizing : border-box;
-  font-family: "Poppins", sans-serif;
+  box-sizing     : border-box;
+  font-family    : "Poppins", sans-serif;
+  text-decoration: none;
+  list-style     : none;
 }
+
+/** Quita los margenes a todos los h1 */
+h1 {
+  margin: 0;
+}
+
 img {
-  max-width: 2%;
+  /* max-width: 2%; */
 }
 
 /** Header inicial 1 */
@@ -54,25 +62,193 @@ input[type="checkbox"] {
 }
 
 .header__titulo {
-  background     : rgb(243, 14, 155);
-  display        : flex;
-  justify-content: space-between;
-  align-items    : center;
-  width          : 100%;
-}
-
-.header__titulo-text {
-  background : rgb(25, 240, 18);
+  /* background : rgb(126, 0, 199); */
   display    : flex;
-  padding    : 0 3rem;
   align-items: center;
   width      : 100%;
 }
 
+.header__titulo-text {
+  /*  background : rgb(25, 240, 18); */
+  display    : flex;
+  padding    : 0 3rem;
+  align-items: center;
+  width      : 100%;
+  color      : white;
+}
+
 .header__dos--menu {
-  background     : rgb(22, 195, 248);
+  /* background     : rgb(22, 195, 248); */
   display        : flex;
   justify-content: space-around;
   align-items    : center;
   width          : 100%;
+}
+
+.header__dos--menu-link,
+.more__menu {
+  color: white;
+}
+
+.more__menu--dos {
+  /*  background-color: rgb(194, 253, 56); */
+  display        : flex;
+  flex-direction : row;
+  align-items    : center;
+  justify-content: center;
+  padding        : .26rem;
+  gap            : .5rem;
+}
+
+.fa-sort-down {
+  display            : flex;
+  align-items        : center;
+  justify-content    : center;
+  /* background-color: rgb(194, 253, 56); */
+}
+
+/** Seccion texas abortion */
+.container__section-title,
+.container__section-paragraph,
+.container__image,
+.container__section-image,
+.container__section-info,
+.container__section-links {
+  width : 100%;
+  height: auto;
+}
+
+.container__section {
+  /* background-color: rgb(126, 29, 29); */
+  display: grid;
+  grid-template-areas:
+    "title      image"
+    "paragraph  image"
+    "info       image";
+  grid-template-columns: repeat(2, 1fr);
+  gap                  : 1rem;
+  padding              : 1rem;
+}
+
+.container__section-title {
+  /* background: blue; */
+  font-size : 1.2em;
+  text-align: center;
+  grid-area : title;
+}
+
+.container__section-paragraph {
+  background: green;
+  font-size : 1.5em;
+  text-align: center;
+  grid-area : paragraph;
+}
+
+.container__image {
+  background: rgb(66, 66, 66);
+  margin-top: 1rem;
+  object-fit: cover;
+  grid-area : image;
+}
+
+.container__section-image {
+  background: rgb(66, 66, 66);
+  height    : 100%;
+}
+
+.container__section-info {
+  background: rgb(26, 125, 238);
+  font-size : 1.5em;
+  grid-area : info;
+}
+
+.container__section-links {
+  background     : rgb(221, 243, 21);
+  align-items    : center;
+  justify-content: center;
+  padding        : 1rem;
+  font-size      : 1.5em;
+  grid-area      : links;
+}
+
+.container__section-links-list {
+  background     : rgb(116, 116, 116);
+  align-items    : center;
+  justify-content: center;
+}
+
+/** Comineza Articulos */
+.section__articulo {
+  background: rgb(126, 29, 29);
+  overflow  : hidden;
+}
+
+.container__section--art {
+  background           : rgb(126, 29, 29);
+  display              : grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap                  : 1rem;
+  padding              : 1rem;
+}
+
+.container__section--articulo {
+  display      : grid;
+  place-content: center;
+  grid-template-areas:
+    "img img img img img"
+    "title title title title title"
+    "desc desc desc desc desc"
+    "footer footer footer footer footer";
+  background: #fff;
+  border    : 1px solid #ccc;
+  padding   : 1rem;
+}
+
+.img1 {
+  display       : flex;
+  flex-direction: column;
+  place-content : center;
+  padding       : 1rem;
+  gap           : 1rem;
+  grid-area     : img;
+  background    : red;
+}
+
+.img1 img {
+  max-width: 100%;
+  height   : auto;
+}
+
+h1 {
+  grid-area: title;
+  font-size: 1.2rem;
+  margin   : 0;
+}
+
+h4 {
+  grid-area: desc;
+  font-size: 1rem;
+  margin   : 0;
+}
+
+footer {
+  grid-area      : footer;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.container__sention--hora {
+  display    : flex;
+  align-items: center;
+  font-size  : 0.8rem;
+}
+
+.container__sention--hora li {
+  list-style  : none;
+  margin-right: 0.5rem;
+}
+
+.container__sention--hora i {
+  margin-right: 0.2rem;
 }
