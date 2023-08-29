@@ -13,23 +13,35 @@ h1 {
 
 /** Header inicial 1 */
 .header {
-  background     : red;
   display        : flex;
   justify-content: space-between;
   align-items    : center;
   padding        : .20rem;
 }
 
+.header__icon--content {
+  display        : flex;
+  align-items    : center;
+  justify-content: start;
+  gap            : .5rem;
+  width          : 20%;
+  padding        : 0 0 0 2.8rem;
+}
+
 .header__icon {
-  background     : yellow;
   display        : flex;
   justify-content: space-between;
   align-items    : center;
-  width          : 20%;
+  padding        : .30rem .70rem;
+  font-size      : 1.3rem;
+  font-weight    : bold;
+  color          : white;
+  background     : black;
+  cursor         : pointer;
 }
 
 .header__nav {
-  background     : blue;
+  background     : rgb(255, 255, 255);
   display        : flex;
   justify-content: space-between;
   align-items    : center;
@@ -37,11 +49,59 @@ h1 {
 }
 
 .header__list {
-  background     : green;
+  margin         : 0;
+  padding        : 0;
   display        : flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items    : center;
-  width          : 60%;
+  width          : 100%;
+
+}
+
+.header__list-item {
+  position: relative;
+  display : block;
+  padding : 1rem;
+}
+
+.header__list-item::after {
+  content         : "";
+  display         : block;
+  width           : 0;
+  height          : 2px;
+  background-color: #fd0000;
+  position        : absolute;
+  bottom          : 0;
+  left            : 0;
+  transition      : width 0.5s;
+}
+
+.header__list-item:hover::after {
+  width: 100%;
+}
+
+.header__list-Login {
+  position       : relative;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+.header__list-Login::before {
+  content         : "";
+  position        : absolute;
+  top             : 30%;
+  right           : 0;
+  bottom          : 0;
+  height          : 50%;
+  width           : 1px;
+  background-color: #ccc;
+}
+
+.fa-user-circle {
+  position : relative;
+  top      : .2rem;
+  font-size: 1.7rem;
 }
 
 input[type="checkbox"] {
@@ -185,7 +245,7 @@ input[type="checkbox"] {
   display           : flex;
   align-items       : center;
   justify-content   : center;
-  border-top: #bebebe 1px solid;
+  border-top        : #bebebe 1px solid;
   margin-top        : 10px;
   height            : 100%;
   /* background     : #c45696b0; */
