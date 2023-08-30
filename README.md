@@ -1,8 +1,8 @@
-<img src="img/noticia.png">
-
 # Proyecto BBC News
 
 Este es un proyecto web que recrea la página de inicio de BBC News en HTML y CSS. Proporciona noticias y enlaces a diferentes secciones.
+
+![Vista previa del proyecto](img/noticia.png)
 
 ## Contenido
 
