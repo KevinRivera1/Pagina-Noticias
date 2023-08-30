@@ -138,6 +138,12 @@ input[type="checkbox"] {
   cursor      : pointer;
 }
 
+a.header__more-link {
+  display       : flex;
+  flex-direction: row;
+  gap           : 0.4rem;
+}
+
 /** Menu Hamburguesa */
 .header__label {
   display: none;
