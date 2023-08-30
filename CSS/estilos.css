@@ -929,14 +929,16 @@ h1.article__title {
     border-bottom : 1px solid #eee;
   }
 
-  .more__menu.more__menu--dos{
-    padding: 0;
+  .more__menu.more__menu--dos {
+    padding      : 0;
     border-bottom: none;
   }
+
   .header__dos--menu-item::after {
     content: none;
   }
-  li.header__dos--menu-item.header__dos--menu-item-select{
+
+  li.header__dos--menu-item.header__dos--menu-item-select {
     border-bottom: none;
   }
 }
