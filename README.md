@@ -10,8 +10,7 @@ Este es un proyecto web que recrea la página de inicio de BBC News en HTML y CS
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Instrucciones de Uso](#instrucciones-de-uso)
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Autor](#autor)
-- [Licencia](#licencia)
+
 
 ## Introducción
 
