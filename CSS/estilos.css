@@ -105,6 +105,7 @@ h1 {
 
 input[type="checkbox"] {
   -webkit-appearance: none;
+  appearance        : none;
   display           : none;
 }
 
@@ -628,13 +629,17 @@ footer {
   }
 
   .footer__list-item {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(214, 214, 214, 0.692);
   }
 
   .container__section {
     display       : flex;
     flex-direction: column;
     padding       : 1rem;
+  }
+
+  .footer__list-item:hover::before {
+    width: 100%;
   }
 
 }
@@ -652,7 +657,11 @@ footer {
     justify-content: center;
     flex-direction : column;
     padding        : 1rem;
-    border-bottom  : 1px solid white;
+    border-bottom  : 1px solid rgba(204, 204, 204, 0.699);
+  }
+
+  .footer__list-item:hover::before {
+    width: 100%;
   }
 }
 
