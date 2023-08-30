@@ -455,6 +455,83 @@ footer {
   gap            : 1rem;
 }
 
+/**seccion Iconos*/
+
+.container__icons {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  flex-direction : column;
+  flex-wrap      : wrap;
+  padding        : 1rem;
+}
+
+.container__icons-block {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  flex-wrap      : wrap;
+  width          : 100%;
+  padding        : 1rem;
+}
+
+.container__icons-media {
+  display    : flex;
+  align-items: center;
+  width      : 100%;
+  height     : 100%;
+  padding    : 1rem;
+}
+
+.container__icons-item a {
+  color    : white;
+  font-size: 2rem;
+}
+
+.fa-twitter {
+  color  : #1DA1F2;
+  padding: 2rem;
+}
+
+.fa-twitter:hover {
+  background: #1DA1F2;
+  color     : white;
+}
+
+.fa-facebook-f {
+  color  : #3B5998;
+  padding: 2rem;
+}
+
+.fa-facebook-f:hover {
+  background: #3B5998;
+  color     : white;
+}
+
+.fa-instagram {
+  color  : #E1306C;
+  padding: 2rem;
+}
+
+.fa-instagram:hover {
+  background: #E1306C;
+  color     : white;
+}
+
+.container__icons-block--apps {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  width          : 70%;
+}
+
+.container__icons-apps {
+  display    : flex;
+  align-items: center;
+  width      : 100%;
+  padding    : 1rem;
+  gap        : 2rem;
+}
 
 /** Footer */
 .footer {
@@ -604,6 +681,23 @@ footer {
   }
 }
 
+@media screen and (max-width: 879px) {
+  .container__icons-block--apps {
+    width: 100%;
+  }
+
+  .container__icons-block--social-media {
+    width: 100%;
+  }
+
+  .container__icons-block--social-media ul {
+    width          : 100%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+  }
+}
+
 @media screen and (max-width: 914px) {
   .header__icon--content {
     width          : 100%;
@@ -627,6 +721,14 @@ footer {
     display       : flex;
     flex-direction: column;
     padding       : 1rem;
+  }
+
+}
+
+@media screen and (max-width: 589px) {
+  .container__icons-apps {
+    flex-direction: column;
+    align-items   : baseline;
   }
 
 }
