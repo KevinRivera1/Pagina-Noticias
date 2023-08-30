@@ -466,6 +466,16 @@ footer {
   padding        : 1rem;
 }
 
+.container__icons-block--title {
+  width: 100%;
+}
+
+.container__icons-title {
+  font-size  : 1.6rem;
+  font-weight: bold;
+  color      : black;
+}
+
 .container__icons-block {
   display        : flex;
   justify-content: space-between;
@@ -526,12 +536,38 @@ footer {
 }
 
 .container__icons-apps {
-  display    : flex;
-  align-items: center;
-  width      : 100%;
-  padding    : 1rem;
-  gap        : 2rem;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  width          : 100%;
+  padding        : 1rem;
+  gap            : 2rem;
 }
+
+.container__icons-app {
+  position   : relative;
+  display    : block;
+  width      : 100%;
+  align-items: center;
+}
+
+.container__icons-app-title {
+  font-size  : 1.5rem;
+  font-weight: bold;
+  color      : black;
+}
+
+.email__desc {
+  color: black;
+}
+
+.fa-envelope-open-text,
+.fa-mobile-alt {
+  color        : black;
+  font-size    : 2rem;
+  padding-right: 1rem;
+}
+
 
 /** Footer */
 .footer {
