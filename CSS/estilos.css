@@ -247,107 +247,93 @@ ul.header__dos--menu {
 }
 
 /** Seccion texas abortion */
-.container__section-title,
-.container__section-paragraph,
-.container__image,
-.container__section-image,
-.container__section-info,
-.container__section-links {
-  width : 100%;
-  height: auto;
-}
 
-.container__section {
+/* Estilos generales para la cuadrícula */
+.grid-container {
   display              : grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows   : repeat(2, max-content);
+  gap                  : 15px 15px;
   grid-template-areas  :
-    "title image image"
-    "paragraph image image"
-    "info image image"
-    "infor links links";
-  padding: 1rem;
+    "card1 image image card5 card6"
+    "card2 card3 card4 card7 .";
+  padding      : 20px;
+  border-radius: 8px;
 }
 
-.container__section-content {
-  background    : rgba(201, 201, 201, 0.308);
-  display       : flex;
-  flex-direction: column;
-  padding       : 1rem;
-  width         : 100%;
+.card1 {
+  grid-area: card1;
 }
 
+.card2 {
+  grid-area: card2;
+}
+
+.card3 {
+  grid-area: card3;
+}
+
+.card4 {
+  grid-area: card4;
+}
+
+.card5 {
+  grid-area: card5;
+}
+
+.card6 {
+  grid-area: card6;
+}
+
+.card7 {
+  grid-area: card7;
+}
+
+.card8 {
+  grid-area: card8;
+}
+
+/* Estilos para las tarjetas */
+.container__section {
+  border-radius: 8px;
+  padding      : 0 20px;
+
+}
+
+/* Estilos para el título de la tarjeta */
 .container__section-title {
-  /* background : violet; */
-  grid-area    : title;
-  font-size    : 1.2rem;
-  font-weight  : bold;
-  text-align   : center;
-  border-bottom: 1px solid #bebebe;
+  font-size    : 1rem;
+  margin       : 0;
+  margin-bottom: 10px;
 }
 
+/* Estilos para el contenido de la tarjeta */
 .container__section-paragraph {
-  /* background: rgb(226, 178, 18); */
-  grid-area : paragraph;
-  font-size : 1.3rem;
-  margin-top: 10px;
+  font-size: 1rem;
+  color    : #333;
+  margin   : 0;
 }
 
+/* Estilos para la información de la noticia en la tarjeta */
 .container__section-info {
-  /* background: rgb(158, 160, 158); */
-  grid-area : info;
-  font-size : 0.8rem;
-  margin-top: 10px;
-  text-align: right;
+  font-size: 0.85rem;
+  color    : #777;
 }
 
-.container__section-info-list {
-  display        : flex;
-  justify-content: flex-end;
-  align-items    : center;
-  gap            : 1rem;
-  padding        : 0;
-  margin         : 0;
+
+/* Estilos para el icono de reloj */
+.container__section-info-list .far.fa-clock {
+  margin-right: 5px;
 }
 
-.container__image {
-  display           : flex;
-  align-items       : center;
-  justify-content   : center;
-  /* background     : rgb(60, 255, 21); */
-}
 
-.container__section-image {
+/* Estilos para la imagen dentro de la cuadrícula */
+.image,
+img {
   grid-area : image;
   max-width : 100%;
   height    : 100%;
-  object-fit: cover;
-}
-
-.container__section-links {
-  display           : flex;
-  align-items       : center;
-  justify-content   : center;
-  border-top        : #bebebe 1px solid;
-  margin-top        : 10px;
-  height            : 100%;
-  /* background     : #c45696b0; */
-  grid-area         : links;
-}
-
-.container__section-links-list {
-  display   : flex;
-  gap       : 1rem;
-  list-style: none;
-  padding   : 0;
-}
-
-.container__section-link {
-  text-decoration: none;
-  color          : #007BFF;
-}
-
-.container__section-link:hover {
-  text-decoration: underline;
+  background: red;
 }
 
 /** Comineza Articulos */
@@ -947,4 +933,67 @@ h1.article__title {
   li.header__dos--menu-item.header__dos--menu-item-select {
     border-bottom: none;
   }
+}
+
+
+@media (max-width: 899px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas  :
+      "card1 image image"
+      "card2 card3 card4"
+      "card5 card6 card7";
+    transition: all 0.5s ease;
+  }
+
+  .container__section {
+    opacity   : 1;
+    transition: opacity 0.5s ease;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas  :
+      "image image"
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 .";
+    transition: all 0.5s ease;
+  }
+
+  .container__section {
+    opacity   : 1;
+    transition: opacity 0.5s ease;
+  }
+}
+
+
+@media (max-width: 415px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas  :
+      "image"
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6"
+      "card7"
+      "card8";
+    transition: all 0.5s ease;
+  }
+
+  .container__section {
+    opacity   : 1;
+    transition: opacity 0.5s ease;
+  }
+}
+
+
+.grid-container .container__section:nth-child(n+10) {
+  opacity: 0;
 }
