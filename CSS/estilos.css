@@ -1024,3 +1024,37 @@ h1.article__title {
 .grid-container .container__section:nth-child(n+10) {
   opacity: 0;
 }
+
+
+/** Lina de cada titulo Linea*/
+.container__icons-block--title {
+  display    : flex;
+  align-items: center;
+}
+
+.container__icons-title {
+  margin: 0;
+}
+
+.line {
+  flex-grow  : 1;
+  border-top : 1px solid #3d3d3d;
+  margin-left: 10px;
+}
+
+
+/** titulo most read Linea */
+.article__header {
+  display    : flex;
+  align-items: center;
+}
+
+.article__title {
+  margin: 0;
+}
+
+.line {
+  flex-grow  : 1;
+  border-top : 1px solid #3d3d3d;
+  margin-left: 10px;
+}
