@@ -272,6 +272,10 @@ ul.header__dos--menu {
   grid-area: card1;
 }
 
+.texas__title {
+  font-size: 1.5rem;
+}
+
 .container__section-info.card-metadata {
   display        : flex;
   align-items    : center;
