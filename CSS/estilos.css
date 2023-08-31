@@ -252,7 +252,7 @@ ul.header__dos--menu {
 .grid-container {
   display              : grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows   : repeat(2, max-content);
+  grid-template-rows   : repeat(2, 1fr);
   gap                  : 15px 15px;
   grid-template-areas  :
     "card1 image image card5 card6"
@@ -261,9 +261,32 @@ ul.header__dos--menu {
   border-radius: 8px;
 }
 
+.card {
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : center;
+}
+
 .card1 {
   grid-area: card1;
 }
+
+.container__section-info.card-metadata {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  width          : 100%;
+}
+
+.container__section-info-list {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  width          : 100%;
+  gap            : 1em;
+}
+
 
 .card2 {
   grid-area: card2;
